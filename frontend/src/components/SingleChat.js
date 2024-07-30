@@ -16,7 +16,7 @@ import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
 
 // const ENDPOINT = "http://localhost:5000"; // "https://talk-a-tive.herokuapp.com"; -> After deployment
-const ENDPOINT = "https://lets-talk-hc06.onrender.com";
+const ENDPOINT = "https://buzztalk-vkx9.onrender.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
