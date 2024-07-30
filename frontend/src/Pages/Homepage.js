@@ -37,7 +37,7 @@ function Homepage() {
         backgroundColor="#d6eaf8"
       >
         <Text fontSize="4xl" fontFamily="Work sans">
-          BuzzTalk
+          WhisperHub
         </Text>
       </Box>
       <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
