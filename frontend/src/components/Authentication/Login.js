@@ -182,35 +182,13 @@ const Login = () => {
         colorScheme="red"
         width="100%"
         onClick={() => {
-          setEmail("guestuser03@example.com");
-          setPassword("Guest@1234");
+          setEmail("guestuser@example.com");
+          setPassword("guest");
         }}
       >
         Get Guest User Credentials
       </Button>
-      {/* <Button
-        leftIcon={<FaGoogle />} // Add Google icon
-        colorScheme="red"
-        variant="outline"
-        width="100%"
-        onClick={handleGoogleLogin}
-      >
-        Login with Google
-      </Button> */}
-      {/* <div>
-        <GoogleLogin
-          onSuccess={(credentialResponse) => {
-            credentialResponseDecoded = jwtDecode(
-              credentialResponse.credential
-            );
-            submitUsingGoogle();
-            // console.log(credentialResponseDecoded);
-          }}
-          onError={() => {
-            console.log("Login Failed");
-          }}
-        />
-      </div> */}
+      
     </VStack>
   );
 };
