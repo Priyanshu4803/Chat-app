@@ -197,23 +197,22 @@ const Login = () => {
       >
         Login with Google
       </Button> */}
-      // <div>
-      //   <GoogleLogin
-      //     onSuccess={(credentialResponse) => {
-      //       credentialResponseDecoded = jwtDecode(
-      //         credentialResponse.credential
-      //       );
-      //       submitUsingGoogle();
-      //       // console.log(credentialResponseDecoded);
-      //     }}
-      //     onError={() => {
-      //       console.log("Login Failed");
-      //     }}
-      //   />
-      // </div>
+      {/* <div>
+        <GoogleLogin
+          onSuccess={(credentialResponse) => {
+            credentialResponseDecoded = jwtDecode(
+              credentialResponse.credential
+            );
+            submitUsingGoogle();
+            // console.log(credentialResponseDecoded);
+          }}
+          onError={() => {
+            console.log("Login Failed");
+          }}
+        />
+      </div> */}
     </VStack>
   );
 };
 
 export default Login;
-
