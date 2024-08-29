@@ -27,8 +27,8 @@ import { useToast } from "@chakra-ui/toast";
 import ChatLoading from "../ChatLoading";
 import { Spinner } from "@chakra-ui/spinner";
 import ProfileModal from "./ProfileModal";
-// import NotificationBadge from "react-notification-badge";
-// import { Effect } from "react-notification-badge";
+import NotificationBadge from "react-notification-badge";
+import { Effect } from "react-notification-badge";
 import { getSender } from "../../config/ChatLogics";
 import UserListItem from "../userAvatar/UserListItem";
 import { ChatState } from "../../Context/ChatProvider";
@@ -76,7 +76,7 @@ function SideDrawer() {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
-      };
+      }; 
 
       const { data } = await axios.get(`/api/user?search=${search}`, config);
 
@@ -100,7 +100,7 @@ function SideDrawer() {
     try {
       setLoadingChat(true);
       const config = {
-        headers: {
+        headers: { 
           "Content-type": "application/json",
           Authorization: `Bearer ${user.token}`,
         },
@@ -150,10 +150,10 @@ function SideDrawer() {
         <div>
           <Menu>
             <MenuButton p={1}>
-              {/* <NotificationBadge
+              <NotificationBadge
                 count={notification.length}
                 effect={Effect.SCALE}
-              /> */}
+              />
               <BellIcon fontSize="2xl" m={1} />
             </MenuButton>
             <MenuList pl={2}>
@@ -217,7 +217,7 @@ function SideDrawer() {
             {loading ? (
               <ChatLoading />
             ) : (
-              searchResult?.map((user) => (
+              searchResult?.map((user) => ( 
                 <UserListItem
                   key={user._id}
                   user={user}
