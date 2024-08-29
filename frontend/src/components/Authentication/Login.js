@@ -8,7 +8,7 @@ import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 import { ChatState } from "../../Context/ChatProvider";
 // import { FaGoogle } from "react-icons/fa"; // Import Google icon
-import { GoogleLogin } from "@react-oauth/google";
+// import { GoogleLogin } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 
 const Login = () => {
@@ -197,20 +197,20 @@ const Login = () => {
       >
         Login with Google
       </Button> */}
-      <div>
-        <GoogleLogin
-          onSuccess={(credentialResponse) => {
-            credentialResponseDecoded = jwtDecode(
-              credentialResponse.credential
-            );
-            submitUsingGoogle();
-            // console.log(credentialResponseDecoded);
-          }}
-          onError={() => {
-            console.log("Login Failed");
-          }}
-        />
-      </div>
+      // <div>
+      //   <GoogleLogin
+      //     onSuccess={(credentialResponse) => {
+      //       credentialResponseDecoded = jwtDecode(
+      //         credentialResponse.credential
+      //       );
+      //       submitUsingGoogle();
+      //       // console.log(credentialResponseDecoded);
+      //     }}
+      //     onError={() => {
+      //       console.log("Login Failed");
+      //     }}
+      //   />
+      // </div>
     </VStack>
   );
 };
